@@ -2,8 +2,6 @@ const person = {
   firstName: 'Christy',
   lastName: 'Pessagno',
   hobby: 'Photography',
-  job: 'Filmmaker',
-  previousJob: 'Editor',
 };
 
 console.log(person);
@@ -15,12 +13,14 @@ const fullName =
 console.log(fullName);
 
 // Part 3
+person.job = 'Filmmaker';
 const job = "The person's job is: " + person.job;
 
 console.log(job);
 
 // Part 4
-const prevJob = "The person's previous job was: " + person.previousJob;
+person['previousJob'] = 'Editor';
+const prevJob = "The person's previous job was: " + person['previousJob'];
 
 console.log(prevJob);
 
